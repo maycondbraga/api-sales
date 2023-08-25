@@ -1,17 +1,17 @@
 {
   "name": "api-sales",
   "version": "1.0.0",
-  "description": "",
+  "description": "first microservice app for api sales",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "ts-node-dev --inspect --transpile-only --ignore-watch node_modules src/server.ts",
+    "dev": "ts-node-dev -r tsconfig-paths/register --inspect --transpile-only --ignore-watch node_modules src/shared/http/server.ts",
     "lint": "eslint . --ext .ts",
     "lint-fix": "eslint . --ext .ts --fix"
   },
   "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "author": "Maycon Braga",
+  "license": "MIT",
   "devDependencies": {
     "@types/node": "^20.5.6",
     "@typescript-eslint/eslint-plugin": "^6.4.1",
